@@ -1,8 +1,7 @@
 angular.module('app')
-.controller('AppCtrl', function(itemsService) {
-  itemsService.getAll((data) => {
-    this.items = data;
-  });
+.controller('AppCtrl', function() {
+  this.adventure = 'swimming';
+  this.add = function() {console.log('hi')};
 })
 .component('app', {
   bindings: {},

@@ -1,21 +1,21 @@
 # Project Name #
+Venplore
 
-<!-- 
-> This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
+The simple way of choosing the perfect adventure!
+Venplore is meant for anyone looking for an activity to do that is tailored to their exact needs.
 
-There is an approach called "working backwards" that is widely used at Amazon. They work backwards from the customer, rather than starting with an idea for a product and trying to bolt customers onto it. While working backwards can be applied to any specific product decision, using this approach is especially important when developing new products or features.
+As a crowd sourced repository of activities, there is are an endless amount of activities that would be perfect for you. Adventurers can filter activties by cost, distance, physicall effort, and etc so that each adventure is exactly what you want at that moment. Once your adventure is complete, you too can rate that activity to ensure that future adventurers can choose a perfect activity as well!
 
-For new initiatives a product manager typically starts by writing an internal press release announcing the finished product. The target audience for the press release is the new/updated product's customers, which can be retail customers or internal users of a tool or technology. Internal press releases are centered around the customer problem, how current solutions (internal or external) fail, and how the new product will blow away existing solutions.
+All too often people want to go out and do something on their weekends, but just don't know what. Finding the perfect activity would take time searching and reading reviews which makes most want to stay in instead. 
 
-If the benefits listed don't sound very interesting or exciting to customers, then perhaps they're not (and shouldn't be built). Instead, the product manager should keep iterating on the press release until they've come up with benefits that actually sound like benefits. Iterating on a press release is a lot less expensive than iterating on the product itself (and quicker!).
+Enter Venplore. A website where users can filter activities based on certain criteria so that anyone could find an activity that is perfect for their desires.
 
-If the press release is more than a page and a half, it is probably too long. Keep it simple. 3-4 sentences for most paragraphs. Cut out the fat. Don't make it into a spec. You can accompany the press release with a FAQ that answers all of the other business or execution questions so the press release can stay focused on what the customer gets. My rule of thumb is that if the press release is hard to write, then the product is probably going to suck. Keep working at it until the outline for each paragraph flows. 
+"A completely revolutionary way to finding an activity for the weekend. You will never stay in on a weekend again!" - Spokesman
 
-Oh, and I also like to write press-releases in what I call "Oprah-speak" for mainstream consumer products. Imagine you're sitting on Oprah's couch and have just explained the product to her, and then you listen as she explains it to her audience. That's "Oprah-speak", not "Geek-speak".
+Your next adventures is only a few clicks away, visit venplore.com to find yours today!
 
-Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
- -->
- 
+# Project Name #
+
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
