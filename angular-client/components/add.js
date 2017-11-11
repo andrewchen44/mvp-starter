@@ -5,9 +5,14 @@ angular.module('app')
     add: '&'
   },
   controller: function($http) {
-    this.input = '';
+    this.name = '';
+    this.category;
+    this.cost;
+    this.effort;
+    this.duration;
+    this.outdoorsey;
     this.search = function() {
-      $http.post('/', 'hi').then(function(responce){
+      $http.post('/', this).then(function(responce){
         console.log(responce)
       });
     }

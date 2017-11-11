@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/../angular-client'));
 app.use(express.static(__dirname + '/../node_modules'));
 
 app.post('/', function(req, res) {
-  db.addAdventure('dancing', 'physical', 4, 7, 5, 9);
+  // db.addAdventure('dancing', 'physical', 4, 7, 5, 9);
   res.send('post recieved');
 });
 
