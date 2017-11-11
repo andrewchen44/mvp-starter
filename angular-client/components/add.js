@@ -8,7 +8,6 @@ angular.module('app')
     this.duration;
     this.outdoorsey;
     this.search = function() {
-      console.log(this.category);
       $http.post('/', this).then(function(responce){
         console.log(responce)
       });
