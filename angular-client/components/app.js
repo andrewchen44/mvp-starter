@@ -1,8 +1,5 @@
 angular.module('app')
-.controller('AppCtrl', function() {
-  this.adventure = 'swimming';
-  this.add = function() {console.log('hi')};
-})
+.controller('AppCtrl', function() {})
 .component('app', {
   bindings: {},
   controller: 'AppCtrl',

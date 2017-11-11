@@ -8,7 +8,11 @@ app.use(express.static(__dirname + '/../angular-client'));
 app.use(express.static(__dirname + '/../node_modules'));
 
 app.post('/', function(req, res) {
-  // db.addAdventure('dancing', 'physical', 4, 7, 5, 9);
+  req.on('data', function(chunk){
+    var data = JSON.parse(chunk);
+    console.log(data);
+    db.addAdventure(data.name, data.category, data.cost, data.effort, data.duration, data.outdoorsey);
+  });
   res.send('post recieved');
 });
 

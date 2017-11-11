@@ -1,17 +1,14 @@
 angular.module('app')
 .component('addAdventure', {
-  bindings: {
-    activity: '@',
-    add: '&'
-  },
   controller: function($http) {
-    this.name = '';
+    this.name;
     this.category;
     this.cost;
     this.effort;
     this.duration;
     this.outdoorsey;
     this.search = function() {
+      console.log(this.category);
       $http.post('/', this).then(function(responce){
         console.log(responce)
       });
