@@ -10,7 +10,7 @@ angular.module('app')
     this.search = function() {
       $http.post('/', this).then(function(responce){
         console.log(responce)
-      });
+      }); 
     }
   },
   templateUrl: '/templates/add.html'

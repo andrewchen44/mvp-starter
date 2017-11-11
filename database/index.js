@@ -23,7 +23,6 @@ var adventures = mongoose.Schema({
 var Adventure = mongoose.model("Adventure", adventures);
 
 var addAdventure = function(name, category, cost, effort, duration, outdoorsey){
-  console.log('calling properly');
   var adventure = new Adventure({
     Name: name,
     Category: category,
