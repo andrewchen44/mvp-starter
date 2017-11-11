@@ -4,6 +4,7 @@ angular.module('app')
 
     this.random = function(){
       $http.get('/random', this).then(function(responce, error){
+        console.log(responce);
       });
     }
   },

@@ -16,8 +16,12 @@ app.post('/', function(req, res) {
 });
 
 app.get('/random', function (req, res) {
-  console.log('get request recieved');
-  res.send('get request recieved');
+  var data = db.randomAdventure();
+  var responce;
+  data.then(function(docs){
+    res.send(docs);
+  })
+  // res.send('get request recieved');
 });
 
 app.listen(3000, function() {

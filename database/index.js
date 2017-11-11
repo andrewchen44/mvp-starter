@@ -34,8 +34,13 @@ var addAdventure = function(name, category, cost, effort, duration, outdoorsey){
   adventure.save();
 };
 
-var existing = function(name) {
-  
+var randomAdventure = function() {
+  return Adventure.find({});
+
+  // data.then(function(docs){
+  //   console.log(docs)
+  // })
 }
 
 module.exports.addAdventure = addAdventure;
+module.exports.randomAdventure = randomAdventure;
