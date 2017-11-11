@@ -1,10 +1,12 @@
 angular.module('app')
 .component('randomAdventure', {
   controller: function($http) {
+    this.adventure;
 
     this.random = function(){
       $http.get('/random', this).then(function(responce, error){
-        console.log(responce);
+        var number = Math.floor(Math.random() * responce.data.length) + 0;
+        this.adventure = responce.data[number];
       });
     }
   },

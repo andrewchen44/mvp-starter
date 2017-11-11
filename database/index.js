@@ -36,10 +36,6 @@ var addAdventure = function(name, category, cost, effort, duration, outdoorsey){
 
 var randomAdventure = function() {
   return Adventure.find({});
-
-  // data.then(function(docs){
-  //   console.log(docs)
-  // })
 }
 
 module.exports.addAdventure = addAdventure;

@@ -21,7 +21,6 @@ app.get('/random', function (req, res) {
   data.then(function(docs){
     res.send(docs);
   })
-  // res.send('get request recieved');
 });
 
 app.listen(3000, function() {
