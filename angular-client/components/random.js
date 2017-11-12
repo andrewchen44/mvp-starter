@@ -1,17 +1,21 @@
 angular.module('app')
 .component('randomAdventure', {
-  controller: function($http) {
-    this.adventure =[];
+  controller: function(retrieve) {
+    this.adventure;
 
+    this.retrieve = retrieve.retrieve;
 
-    this.random = function() {
-      var adventure = this.adventure;
-      $http.get("/random").then(function(responce, error) {
-        var number = Math.floor(Math.random() * responce.data.length) + 0;
-        adventure = responce.data[number];
-      });
+    this.update = (adventures) => {
+      var number = Math.floor(Math.random() * adventures.data.length) + 0;
+      this.adventure = adventures.data[number];
+      console.log(this.adventure);
     };
 
+    this.retrieve({}, 
+      (adventures) => {
+      this.update(adventures);
+      }
+    );
   },
   templateUrl: "/templates/random.html"
 });

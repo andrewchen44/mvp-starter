@@ -5,7 +5,6 @@ angular.module('app')
   },
   controller: function() {
     
-
   },
   templateUrl: "/templates/render.html"
 })
