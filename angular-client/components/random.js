@@ -8,11 +8,10 @@ angular.module('app')
     this.update = (adventures) => {
       var number = Math.floor(Math.random() * adventures.data.length) + 0;
       this.adventure = adventures.data[number];
-      console.log(this.adventure);
     };
 
     this.retrieve({}, 
-      (adventures) => {
+      (adventures) => { 
       this.update(adventures);
       }
     );

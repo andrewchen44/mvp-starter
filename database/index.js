@@ -17,7 +17,8 @@ var adventures = mongoose.Schema({
   Cost: Number,
   Effort: Number,
   Duration: Number,
-  Outdoorsey: Number, 
+  Outdoorsey: Number,
+  Likes: Number 
 })
 
 var Adventure = mongoose.model("Adventure", adventures);
@@ -29,7 +30,8 @@ var addAdventure = function(name, category, cost, effort, duration, outdoorsey){
     Cost: cost,
     Effort: effort,
     Duration: duration,
-    Outdoorsey: outdoorsey
+    Outdoorsey: outdoorsey,
+    Likes: effort
   })
   adventure.save();
 };

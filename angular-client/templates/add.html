@@ -1,5 +1,5 @@
 <div>
-  <h3> Add Adventure </h3>
+  <h3> Add an Adventure </h3>
   <form>
     <div>Name:<input type="text" ng-model="$ctrl.name"></div>
     <div>Category:<input type="text" ng-model="$ctrl.category"></div>
@@ -7,6 +7,6 @@
     <div>Effort:<input type="number" ng-model="$ctrl.effort"></div>
     <div>Average Duration:<input type="number" ng-model="$ctrl.duration"></div>
     <div>Outdoorsey:<input type="number" ng-model="$ctrl.outdoorsey"></div>
-    <button ng-click="$ctrl.search()"> Submit </button>
+    <button ng-click="$ctrl.search()" ng-click="form.reset()"> Submit </button>
   </form> 
 </div>

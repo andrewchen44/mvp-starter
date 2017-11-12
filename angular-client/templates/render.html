@@ -3,4 +3,11 @@
 <div>Cost: {{$ctrl.adventure.Cost}}</div>
 <div>Duration: {{$ctrl.adventure.Duration}}</div>
 <div>Effort: {{$ctrl.adventure.Effort}}</div>
-<div>Outdoorsey{{$ctrl.adventure.Outdoorsey}}</div>
+<div>Outdoorsey: {{$ctrl.adventure.Outdoorsey}}</div>
+<div>
+  Likes: {{$ctrl.adventure.Likes}}
+  <button ng-click="$ctrl.like()">
+    Like
+  </button>
+</div>
+
