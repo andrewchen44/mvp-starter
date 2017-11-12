@@ -3,8 +3,6 @@ angular.module('app')
   bindings: {
     adventure: '<'
   },
-  controller: function() {
-    
-  },
+  controller: function() {},
   templateUrl: "/templates/render.html"
 })
