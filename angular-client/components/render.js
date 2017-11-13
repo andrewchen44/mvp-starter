@@ -3,12 +3,12 @@ angular.module('app')
   bindings: {
     adventure: '='
   },
-  controller: function() {
+  controller: function(like) {
     this.like = () => {
-      this.adventure
+      this.adventure.Likes++;
+      like.increase(this.adventure);
       console.log('like works');
     };
-    this.like();
   },
 
   templateUrl: "/templates/render.html"

@@ -31,7 +31,7 @@ var addAdventure = function(name, category, cost, effort, duration, outdoorsey){
     Effort: effort,
     Duration: duration,
     Outdoorsey: outdoorsey,
-    Likes: effort
+    Likes: 0
   })
   adventure.save();
 };
@@ -40,5 +40,11 @@ var randomAdventure = function() {
   return Adventure.find({});
 }
 
+var like = function(name, value) {
+  console.log(name, value);
+  Adventure.update({Name: 'boxing'}, {Likes: 1});
+};
+
 module.exports.addAdventure = addAdventure;
 module.exports.randomAdventure = randomAdventure;
+module.exports.like = like;
