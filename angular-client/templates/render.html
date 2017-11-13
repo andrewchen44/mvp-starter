@@ -1,13 +1,16 @@
-<div>Name: {{$ctrl.adventure.Name}}</div>
-<div>Category: {{$ctrl.adventure.Category}}</div>
-<div>Cost: {{$ctrl.adventure.Cost}}</div>
-<div>Duration: {{$ctrl.adventure.Duration}}</div>
-<div>Effort: {{$ctrl.adventure.Effort}}</div>
-<div>Outdoorsey: {{$ctrl.adventure.Outdoorsey}}</div>
-<div>
-  Likes: {{$ctrl.adventure.Likes}}
-  <button ng-click="$ctrl.like()">
-    Like
-  </button>
-</div>
+<ul class="list-group">
+  
+  <div class="list-group-item">Name: {{$ctrl.adventure.Name}}</div>
+  <div class="list-group-item">Category: {{$ctrl.adventure.Category}}</div>
+  <div class="list-group-item">Cost: {{$ctrl.adventure.Cost}}</div>
+  <div class="list-group-item">Duration: {{$ctrl.adventure.Duration}}</div>
+  <div class="list-group-item">Effort: {{$ctrl.adventure.Effort}}</div>
+  <div class="list-group-item">Outdoorsey: {{$ctrl.adventure.Outdoorsey}}</div>
+  <div class="list-group-item">
+    Likes: {{$ctrl.adventure.Likes}}
+    <button ng-click="$ctrl.like()" class="btn btn-secondary">Like</button>
+  </div>
+  
+</ul>  
+  
 
