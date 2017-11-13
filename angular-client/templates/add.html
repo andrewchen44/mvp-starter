@@ -1,12 +1,24 @@
 <div>
   <h3> Add an Adventure </h3>
-  <form>
-    <div>Name:<input type="text" ng-model="$ctrl.name"></div>
-    <div>Category:<input type="text" ng-model="$ctrl.category"></div>
-    <div>Cost:<input type="number" ng-model="$ctrl.cost"></div>
-    <div>Effort:<input type="number" ng-model="$ctrl.effort"></div>
-    <div>Average Duration:<input type="number" ng-model="$ctrl.duration"></div>
-    <div>Outdoorsey:<input type="number" ng-model="$ctrl.outdoorsey"></div>
-    <button ng-click="$ctrl.search()" ng-click="form.reset()"> Submit </button>
+  <form class="form-group">
+    <div class="block">
+      <input type="text" ng-model="$ctrl.name" placeholder="Adventure Name: Skydiving" class="form-control">
+    </div>
+    <div>
+      <input type="text" ng-model="$ctrl.category" placeholder="Adventure Category: Extreme Sport" class="form-control">
+    </div>
+    <div>
+      <input type="number" ng-model="$ctrl.cost" placeholder="Cost: 7" class="form-control">
+    </div>
+    <div>
+      <input type="number" ng-model="$ctrl.effort" placeholder="Effort: 6" class="form-control">
+    </div>
+    <div>
+      <input type="number" ng-model="$ctrl.duration" placeholder="Duration: 4" class="form-control">
+    </div>
+    <div>
+      <input type="number" ng-model="$ctrl.outdoorsey" placeholder="Outdoorsey: 10" class="form-control">
+  </div>
+    <button ng-click="$ctrl.search()" ng-click="form.reset()" class="btn btn-primary"> Submit </button>
   </form> 
 </div>
