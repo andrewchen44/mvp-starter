@@ -18,11 +18,10 @@ app.post('/', function(req, res) {
 app.post('/likes', (req, res) => {
   req.on('data', function(chunk) {
     var data = JSON.parse(chunk);
-    console.log(data);
     db.like(data.Name, data.Likes);
   })
-});
-0
+}); 
+
 app.get('/random', function (req, res) {
   var data = db.randomAdventure();
   var responce;

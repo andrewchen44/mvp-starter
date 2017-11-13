@@ -7,9 +7,7 @@ angular.module('app')
     this.like = () => {
       this.adventure.Likes++;
       like.increase(this.adventure);
-      console.log('like works');
     };
   },
-
   templateUrl: "/templates/render.html"
 })

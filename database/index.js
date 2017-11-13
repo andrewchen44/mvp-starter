@@ -42,7 +42,11 @@ var randomAdventure = function() {
 
 var like = function(name, value) {
   console.log(name, value);
-  Adventure.update({Name: 'boxing'}, {Likes: 1});
+  Adventure.update({Name: 'boxing'}, {Likes: value}, {safe: true}, function(err, raw) {
+    if (err) return handleError(err);
+    console.log('the raw responce from mongo was', raw);
+
+  });
 };
 
 module.exports.addAdventure = addAdventure;
